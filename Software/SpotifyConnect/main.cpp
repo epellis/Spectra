@@ -31,7 +31,7 @@ void authenticateWithSpotify()
   dnsServer.start(DNS_PORT, "*", apIP);
 
   webServer.onNotFound([](){
-    webServer.send(200, "text/html", "<h1>Hello World</h1>");
+    webServer.send(200, "text/html", "<!DOCTYPE html><html><h1>Hello World</h1></html>");
   })
   webServer.begin();
 }
